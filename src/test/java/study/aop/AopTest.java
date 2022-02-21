@@ -10,10 +10,12 @@ import org.springframework.context.annotation.Import;
 import study.aop.order.OrderRepository;
 import study.aop.order.OrderService;
 import study.aop.order.aop.AspectV1;
+import study.aop.order.aop.AspectV2;
 
 @Slf4j
 @SpringBootTest
-@Import({AspectV1.class})
+//@Import({AspectV1.class})
+@Import({AspectV2.class})
 public class AopTest {
 
     @Autowired
