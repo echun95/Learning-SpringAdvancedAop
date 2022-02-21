@@ -11,11 +11,13 @@ import study.aop.order.OrderRepository;
 import study.aop.order.OrderService;
 import study.aop.order.aop.AspectV1;
 import study.aop.order.aop.AspectV2;
+import study.aop.order.aop.AspectV3;
 
 @Slf4j
 @SpringBootTest
 //@Import({AspectV1.class})
-@Import({AspectV2.class})
+//@Import({AspectV2.class})
+@Import({AspectV3.class})
 public class AopTest {
 
     @Autowired
